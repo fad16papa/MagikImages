@@ -178,7 +178,7 @@ const TransformationForm = ({
           [fieldName === "prompt" ? "prompt" : "to"]: value,
         },
       }));
-    }, 1000);
+    }, 1000)(); //added () for self invoking;
     return onChangField(value);
   };
 
