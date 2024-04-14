@@ -27,6 +27,7 @@ export default function RootLayout({
       }}
     >
       <html lang="en">
+        <link rel="icon" href="/assets/magikimageslogo/Icon.svg" />
         <body className={cn("font-IBMPlex antialiased", IBMPlex.variable)}>
           {children}
         </body>
