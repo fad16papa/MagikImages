@@ -61,6 +61,12 @@ declare type GetAllImagesParams = {
   searchQuery?: string;
 };
 
+declare type GetUserImagesParams = {
+  limit?: number;
+  page: number;
+  userId?: String;
+};
+
 declare type Transformations = {
   restore?: boolean;
   fillBackground?: boolean;
