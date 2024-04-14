@@ -178,9 +178,8 @@ const TransformationForm = ({
           [fieldName === "prompt" ? "prompt" : "to"]: value,
         },
       }));
-
-      return onChangField(value);
     }, 1000);
+    return onChangField(value);
   };
 
   //TODO: update credit fee to dynamic
@@ -227,6 +226,7 @@ const TransformationForm = ({
                 onValueChange={(value) =>
                   onSelectFieldHandler(value, field.onChange)
                 }
+                value={field.value}
               >
                 <SelectTrigger className="select-field">
                   <SelectValue placeholder="Select size" />
