@@ -148,3 +148,12 @@ declare type TransformedImageProps = {
   hasDownload?: boolean;
   setIsTransforming?: React.Dispatch<React.SetStateAction<boolean>>;
 };
+
+// ====== EMAIL PARAMS
+declare type SendEmailParams = {
+  header: string;
+  body: string;
+  sender: string;
+  email: string;
+  createdAt?: Date;
+};

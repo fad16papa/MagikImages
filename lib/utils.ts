@@ -126,6 +126,7 @@ export const download = (url: string, filename: string) => {
         a.download = `${filename.replace(" ", "_")}.png`;
       document.body.appendChild(a);
       a.click();
+      console.log("im here");
     })
     .catch((error) => console.log({ error }));
 };
